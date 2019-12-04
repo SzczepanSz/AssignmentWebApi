@@ -1,0 +1,47 @@
+﻿<div class="jumbotron">
+    <h1>C# WebApi</h1>
+    <p class="lead">purpose is gaining geolocation data by ip address or url</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Get(string ip)</h2>
+        
+        <p>GET: api/IpStack/Get</p>
+        <p>sample query:</p>
+        <p>'{adress}/api/IpStack/Get/?ip=212.244.0.0'</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get(string url)</h2>
+        <p>GET: api/IpStack/Get</p>
+        <p>sample query:</p>
+        <p>'{adress}/api/IpStack/Get/?ip=212.244.0.0'</p>                
+    </div>
+    <div class="col-md-4">
+        <h2>Post(JObject jsonObject)</h2>
+        <p>POST: api/IpStack/Post</p>
+        <p>JSON sample:</p>
+        <p>{</p>
+        <p> "status": "TransacionSucces",</p>
+        <p> "country": "Poland",</p>
+        <p> "countryCode": "PL",</p>
+        <p> "region": "14",</p>
+        <p> "regionName": "Mazovia",</p>
+        <p> "city": "Warsaw",</p>
+        <p> "zip": "00-510",</p>
+        <p> "lat": 21.0122,</p>
+        <p> "lon": 21.0122,</p>
+        <p> "timezone": "Europe/Warsaw",</p>
+        <p> "isp": "Ringier Axel Springer Polska Sp. z o.o.",</p>       
+        <p> "org": "Grupa Onet.pl SA - Anycast Services",</p>
+        <p> "AS": null</p>
+        <p>}</p>     
+    </div>
+    <div class="col-md-4">
+        <h2>Delete(JObject jsonObject)</h2>
+        <p>DELETE: api/IpStack/Delete</p>
+        <p>JSON sample:</p>
+        <p>{</p>
+        <p> "ip":"157.25.0.0"</p>
+        <p>}</p>                          
+    </div>
+</div>
